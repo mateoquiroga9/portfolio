@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "2023 - Present",
+    title: "Junior Software Developer",
+    company: "BIBISOFT SAS | COL",
+    description:
+      "Developed a comprehensive business management software for industries such as restaurants, integrating modules for POS, reservations, reporting, inventory, and more. Designed and optimized an e-commerce platform and multiple landing pages using Next.js and React, following Scrum methodologies and version control with GitHub. Integrated payment gateways to enhance transaction efficiency. Managed application state using Redux and React Context, ensuring scalability and maintainability. Optimized SQL queries for better performance and focused on clean architecture, modularization, and secure coding. These improvements led to a 15% increase in sales by enhancing platform performance and user experience.",
+    // link: "https://twitch.tv/midudev"
+  },
+  {
+    date: "2025",
+    title: "Web Developer - AI Data Labeling (Freelancer)",
+    company: "OPEN TRAIN AI | USA",
+    description:
+      "Worked as a freelance developer on a 3-month AI training project, focusing on frontend development with HTML, JavaScript, and CSS. Designed, implemented, and tested code to optimize UI interactions and ensure seamless integration with AI-driven features. Conducted code reviews to maintain quality and performance, contributing to a robust and efficient user experience.",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
